@@ -1,0 +1,50 @@
+Ubuntu
+
+Activate env  
+ source env/bin/activate
+
+Front end
+Go to folder 
+npm start
+
+Database
+change these settings in settings.py of backend
+User -username
+Password- userpassword
+Database- sqlite3 
+
+Create new super user
+python manage.py createsuperuser
+
+Go to folder backend
+mysql -u newuser -p                
+sudo service mysql start
+sudo service mysql stop
+
+Backend
+Go to that backend directory 
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+
+Git
+Username password
+git clone https//…....  .git not witten   -for 1st time cloning the repo to local
+
+Update local repo and also cloned repo 
+Go to project directory
+see the unstaged file locations
+git status
+for every file in which changes are made
+ 	git add file location 
+commit every file changed
+git commit -m ‘message why file was updated’
+merge your changes and the updated repo and store in my local
+ git pull 
+push the updated file back to repo
+git push
+
+
+If you don't want your changes remain and just replace your local with repo
+git pull origin master
+git reset --hard
